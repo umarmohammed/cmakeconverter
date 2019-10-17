@@ -177,9 +177,9 @@ class ProjectVariables(object):
         """
 
         variables_to_remove = [
-            '$(SolutionDir)', '$(Platform)', '$(Configuration)', '$(ProjectDir)', '$(SolutionName)',
+            '$(SolutionDir)', '$(Platform)', '$(Configuration)', '$(ProjectDir)', '$(SolutionName)', '$(PlatformTarget)',
         ]
-        slash_to_remove = ['/-/', '/_/', '//']
+        slash_to_remove = ['/-/', '/_/', '///', '//']
         output = output.replace('\\', '/')
 
         for var in variables_to_remove:
